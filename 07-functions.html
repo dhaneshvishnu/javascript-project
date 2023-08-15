@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Functions</title>
+    </head>
+
+    <body>
+      <script>
+        //parameter = puts a value into a function
+        function calculateTax(cost, taxPercent = 0.2) {
+          console.log(cost * taxPercent)
+        }
+        calculateTax(2000);
+        calculateTax(5000);
+        calculateTax(3000);
+
+        //sample
+        function greet(name, age, dob) {
+          console.log(`Name: ${name}`, `\nAge: ${age}`, `\nDOB: ${dob}`) 
+        }
+        greet('Dhanesh', 26, '16-09-96');
+
+      </script>
+    </body>
+  </html>

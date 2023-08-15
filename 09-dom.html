@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title> <!-- Document Object Model -->
+
+    <style>
+      .gaming, .jumping {
+        background-color: lightgray;
+        color: black;
+      }
+
+      .game1, .jump1 {
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <button>Hello</button>
+    <button class="js-welcome">Welcome</button> 
+
+    <!-- <button class="js-gaming gaming" onclick="gam();">Gaming</button>
+
+    <button class="js-jumping jumping" onclick="jum();">Jumping</button>
+   -->
+  <script>
+
+  //   function gam () {
+
+  //   let game = document.querySelector('.js-gaming');
+
+  //   if (game.innerHTML === 'Gaming') {
+  //     game.innerHTML = 'Gaming ';
+  //     game.classList.add('game1');
+  //   } else if (game.innerHTML === 'Gaming ') {
+  //     game.classList.remove('game1');
+  //     game.innerHTML = 'Gaming';
+  //   }
+  // }
+
+  //   function jum() {
+
+  //   let jump = document.querySelector('.js-jumping');
+
+  //   if (jump.innerHTML === 'Jumping') {
+  //     jump.innerHTML = 'Jumping ';
+  //     jump.classList.add('jump1');
+   
+  //   } else if (jump.innerHTML === 'Jumping ') {
+  //     jump.classList.remove('jump1');
+  //     jump.innerHTML = 'Jumping';
+      
+  //   }
+  // }
+
+     document.title = 'Document Object Model'; //title changed from DOM to Document Object Model
+     console.log(document.title);
+     
+     const buttonElement = document.querySelector('button');
+     console.log(buttonElement.innerHTML);
+     
+     const buttonElement1 = document.querySelector('.js-welcome');
+     console.log(buttonElement1.innerHTML);
+
+   </script>
+
+  </body>
+</html>

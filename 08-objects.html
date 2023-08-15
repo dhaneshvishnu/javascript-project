@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Objects</title>
+    </head>
+
+    <body>
+      <script>
+        const product = {
+          name: 'socks',
+          price: 'Rs.200'
+        };
+
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        //assigning new value to 'name' property (from socks to shirt)
+        product.name = 'shirt';
+        console.log(product.name);
+
+        //delete 'price' property
+        delete product.price;
+        console.log(product);
+
+        const person = {
+          firstName: 'Dhanesh', //using camelCase in property to link two words
+          'last-name': 'Vishnu', //another way to link property which has two words
+          others: { //Nested object - object inside object
+            age: 26,
+            height: '170cm',
+            weight: '90kgs'
+          },
+
+          fun: function character() { //function inside object
+            console.log('Dhanesh is a good boy');
+          }
+        }
+
+        console.log(person.firstName); //dot notation
+        console.log(person['last-name']); //bracket notation
+        console.log(person.others.age); //accessing value inside nested object
+        person.fun();
+
+        console.log(person); //displaying JS object (default)
+        console.log(JSON.stringify(person)); //displaying JSON object
+        console.log(JSON.parse(JSON.stringify(person))); //coverting JSON object back to JS object
+
+        
+        
+
+      </script>
+    </body>
+  </html> 

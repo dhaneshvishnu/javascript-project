@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+      function greeting () { //calling or running the function 
+        console.log('hello');
+      }
+      greeting();
+
+      //functions are values
+      //we store values inside variable, same like that we can save a function inside variable
+
+      const variable = function () { 
+        console.log('hello2');
+      } //anonymous function (function without name)
+
+      console.log(variable);
+      console.log(typeof variable);
+      variable(); //calling the function using variable 
+      
+
+      const object1 = { 
+        num:2,
+        fun: function () { //function saved inside object (anonymous function )
+          console.log('hello3');
+        }
+      }
+       object1.fun(); 
+
+
+       function display(param) {
+          console.log(param);
+       }
+       display(2); //passing a value into function
+
+
+       function run(param) {
+          param(); 
+       }
+       run(function() {
+        console.log('hello4');
+       }); //passing a function into another function 
+       */
+
+       setTimeout(function() {
+        console.log('timeout');
+       }, 3000); //calling function after certain point of time, 3000 milliseconds = 3 seconds
+
+       console.log('next time');
+       
+       setInterval(function() {
+        console.log('interval');
+       }, 3000);
+
+
+       
+
+    </script>
+  </body>
+
+</html>
